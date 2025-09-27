@@ -1,0 +1,98 @@
+.chessboard-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  .game-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    h3 {
+      color: #fff;
+      font-size: 32px;
+      position: relative;
+      text-align: center;
+      margin: 0;
+      &::after {
+        position: absolute;
+        content: "GOBBLE CHESS";
+        bottom: -3px;
+        left: 3px;
+        color: black;
+        -webkit-text-stroke: 0.5px white;
+        z-index: -1;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    h4 {
+      color: #daa585;
+      font-size: 20px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  .chessboard-wrapper {
+    width: 70%;
+    height: 90%;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #3c3c3c;
+  }
+  .actions-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+#play-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2%;
+  .user-info-wrapper {
+    width: 50%;
+    max-width: 380px;
+    background: #2f2b29;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 2%;
+    gap: 30px;
+    .user-avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .avatar {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffe5b8;
+        border-radius: 5px;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+  .moves-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
