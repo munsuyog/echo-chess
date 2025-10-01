@@ -1,6 +1,6 @@
-$default_bg: linear-gradient(#2B302A, #262421);
+$default_bg: linear-gradient(#2b302a, #262421);
 $puzzled_bg: #262421;
-$spoiler_bg: linear-gradient( #24242E, #262421);
+$spoiler_bg: linear-gradient(#24242e, #262421);
 
 #modal {
   position: fixed;
@@ -17,9 +17,12 @@ $spoiler_bg: linear-gradient( #24242E, #262421);
     width: 419px;
     height: 503px;
     background: $default_bg;
-    background-color: #3A3A3A;
-    border-radius: 8px; 
-    border: 1px solid #3A3A3A;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+    @include max-width(md) {
+      width: 350px;
+    }
     .modal-body {
       height: 100%;
     }

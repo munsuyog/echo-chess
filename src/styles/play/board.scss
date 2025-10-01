@@ -5,12 +5,10 @@ cg-board .obstacle {
 }
 cg-board .disabled {
     background: #262522;
-
 }
 
 cg-board square.move-dest {
   background: #9AFF9A !important; 
-  pointer-events: auto;
 }
 
 cg-board square.selected {

@@ -1,7 +1,7 @@
 $btn_background: #373734;
 $btn_border: #a9f99e;
 
-$btn_border_secondary: #5F5955;
+$btn_border_secondary: #5f5955;
 
 #button {
   position: relative;
@@ -40,17 +40,18 @@ $btn_border_secondary: #5F5955;
     top: 0;
     left: 0;
     gap: 10px;
-      @include max-width(md) {
-    font-size: 13px;
+    @include max-width(md) {
+      font-size: 13px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
   }
-  }
-
 
   &.lg {
     max-width: 212px;
     height: 42px;
     @include max-width(md) {
-      max-width: 160px;
+      min-width: 160px;
       height: 35px;
     }
   }
@@ -85,13 +86,13 @@ $btn_border_secondary: #5F5955;
   &:hover {
     top: 2px;
     .border {
-      top: 2px; 
+      top: 2px;
     }
   }
 
   &:active {
     .border {
-      top: 0; 
+      top: 0;
     }
   }
 
