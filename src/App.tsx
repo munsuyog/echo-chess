@@ -4,6 +4,7 @@ import PlayPage from './pages/Play'
 import './styles/main.scss'
 import FriendsPage from './pages/Friends'
 import ExpertPage from './pages/Expert'
+import Solution from './pages/Solution'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route element={<PlayPage />} path='/play' />
           <Route element={<FriendsPage />} path='/friends' />
           <Route element={<ExpertPage />} path='/expert' />
+          <Route element={<Solution />} path='/solution' />
 
         </Route>
       </Routes>

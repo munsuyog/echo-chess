@@ -1,0 +1,96 @@
+.finished-modal {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  .home-btn {
+    position: absolute !important;
+    width: 34px !important;
+    height: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
+    top: 20px;
+  }
+  .modal-title {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: $font_montserrat;
+    background: linear-gradient(60deg, #AAF99E, #66FF99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    &::after {
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      text-align: center;
+      top: 2px;
+      content: attr(data-title);
+      font-size: 40px;
+      -webkit-text-stroke: 1px #aaf99e;
+      z-index: -1;
+    }
+    &.puzzled {
+      background: linear-gradient(#ED4AD0, #FA2D2C);
+          -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      &::after {
+      -webkit-text-stroke: 1px #FA2D2C;
+
+      }
+      &::before {
+      -webkit-text-stroke: 1px #FA2D2C;
+
+      }
+    }
+    &::before {
+      position: absolute;
+      left: 0px;
+      top: 4px;
+      width: 100%;
+      text-align: center;
+      content: attr(data-title);
+      font-size: 40px;
+      -webkit-text-stroke: 1px #aaf99e;
+      z-index: -1;
+    }
+  }
+
+  .modal-status {
+    text-align: center;
+    font-weight: 500;
+    color: white;
+  }
+  .modal-stars {
+    display: flex;
+    gap: 20px;
+  }
+
+  .share-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    .share-text {
+      font-size: 12px;
+      color: #c1c1c1;
+      font-weight: 500;
+    }
+  }
+  .game-actions-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+}

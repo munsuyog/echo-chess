@@ -17,7 +17,7 @@ const Sidebar = () => {
     <div id="sidebar">
       <div className="logo-wrapper">
         <LogoIcon />
-        <h6>ChessLing</h6>
+        <h6>StrikeChess</h6>
       </div>
       <div className="links-wrapper">
         {links.map((link) => (

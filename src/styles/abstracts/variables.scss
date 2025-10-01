@@ -9,3 +9,14 @@ $font_color_secondary: #9C9B97;
 // Fonts
 $font_montserrat: "Montserrat", sans-serif;
 $font_montserrat_alternates: "Montserrat Alternates", sans-serif;
+
+
+// breakpoints
+$breakpoints: (
+  xs: 480px,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px
+);

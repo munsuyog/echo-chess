@@ -1,11 +1,17 @@
 // Imports
 @import "abstracts/variables.scss";
+@import "abstracts/mixins.scss";
 
 // Imports - Layouts
 @import "layouts/index.scss";
 @import "play/index.scss";
 @import "play/stats.scss";
 @import "play/button.scss";
+@import "play/board.scss";
+@import "play/finished-modal.scss";
+@import "play/spoiler-modal.scss";
+@import "play/solution-modal.scss";
+
 
 @import "icons/index.scss";
 
@@ -28,6 +34,7 @@ body {
   height: 100%;
   background: $background_color;
   color: $font_color_primary;
+  overflow: hidden;
 }
 :root {
   box-sizing: border-box;
